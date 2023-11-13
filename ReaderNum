@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ReaderNum {
+	public static void main(String[] args) {
+		Scanner num = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int number = num.nextInt();
+        int x = 0;
+        while (number != 0) {
+         number = number/10;
+         x++;         
+        }
+		System.out.println("Il tuo numero ha  " + x + "Cifre");
+	}
+}
+
