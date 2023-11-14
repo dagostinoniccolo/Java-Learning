@@ -1,0 +1,31 @@
+public class Convertor{
+    public static void main(String[] args) {
+        String myint = "123";
+        String mylong = "12312312312";
+        String myflot = "12.12";
+        String mydouble = "12.1212121212";
+        
+        //Primitive parsing
+        int primint = Integer.parseInt(myint);
+        long primlong = Long.parseLong(mylong);
+        float primfloat = Float.parseFloat(myflot);
+        double primdouble = Double.parseDouble(mydouble);
+
+        //wrap objecting
+        int wrapint = Integer.valueOf(myint);
+        long wraplong = Long.valueOf(mylong);
+        float wrapfloat = Float.valueOf(myflot);
+        double wrapdouble = Double.valueOf(mydouble);
+
+        System.out.println("PRIMITIVE INT: " + primint + " WRAPPED INTEGER : " + wrapint);
+        System.out.println("PRIMITIVE LONG: " + primlong + " WRAPPED LONG : " + wraplong);
+        System.out.println("PRIMITIVE FLOAT: " + primfloat + " WRAPPED FLOAT : " + wrapfloat);
+        System.out.println("PRIMITIVE DOUBLE: " + primdouble + " WRAPPED DOUBLE : " + wrapdouble);
+
+
+    
+
+    
+
+    }
+}
